@@ -11,6 +11,36 @@
       "name": "Asad",
       "email": "asad@gmail.com",
       "password": "abc@345"
+    },
+    {
+      "id": "b969",
+      "name": "a",
+      "password": "aa",
+      "email": "aa"
+    },
+    {
+      "id": "72ec",
+      "name": "Azad",
+      "password": "azad@mail.com",
+      "email": "abc@123"
+    },
+    {
+      "id": "8ac9",
+      "name": "Ayaz",
+      "password": "abc@1234",
+      "email": "ayaz@email.com"
+    },
+    {
+      "id": "b519",
+      "name": "qasim",
+      "password": "abc@987",
+      "email": "qasim@mail.com"
+    },
+    {
+      "id": "f9a8",
+      "name": "Wasim",
+      "password": "abc@123",
+      "email": "wasim@mail.com"
     }
   ]
 }
