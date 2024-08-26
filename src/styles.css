@@ -4,5 +4,25 @@ body{
 .container{
     margin-left: 5%;
     margin-right: 5%;
-    margin-top: 3%;
+}
+.common-form {
+text-align: center;
+display: flex;
+margin: auto;
+flex-direction: column;
+width: 300px;
+}
+.form-input {
+height: 35px;
+margin-bottom: 20px;
+padding-left: 10px;
+border: 1px solid blueviolet;
+border-radius: 15px;
+color: blueviolet;
+}
+.form-button {
+    height: 35px;
+    border: 1px solid blueviolet;
+    border-radius: 15px;
+    cursor: pointer;
 }
