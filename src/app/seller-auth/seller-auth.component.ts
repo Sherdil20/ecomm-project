@@ -11,20 +11,28 @@ import { SignUp } from '../data-type';
 export class SellerAuthComponent {
   constructor(private seller:SellerService, private router:Router
   ){}
-  showLogin=true
+  showLogin=true;
+  authError:string='';
 
 ngOnInit():void{
   this.seller.reloadSeller()
 }
   signUp(data:SignUp):void{
     console.warn(data);
-    this.seller.userSignUp(data)
+    this.seller.userSignUp(data);
   }
   login(data:SignUp):void{
-    console.warn(data);
+    this.authError="";
+    // console.warn(data);
+    this.seller.userSignUp(data);
+    this.seller.isLoginError.subscribe((isError)=>{
+      if(isError){
+        this.authError="Email or password is not Correct"
+    }
+  })
   }
   openLogin() {
-this.showLogin=true
+    this.showLogin=true
   }
   openSignUp(){
     this.showLogin=false
