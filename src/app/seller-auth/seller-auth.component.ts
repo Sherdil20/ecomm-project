@@ -11,10 +11,22 @@ import { SignUp } from '../data-type';
 export class SellerAuthComponent {
   constructor(private seller:SellerService, private router:Router
   ){}
+  showLogin=true
+
 ngOnInit():void{
   this.seller.reloadSeller()
 }
   signUp(data:SignUp):void{
+    console.warn(data);
     this.seller.userSignUp(data)
+  }
+  login(data:SignUp):void{
+    console.warn(data);
+  }
+  openLogin() {
+this.showLogin=true
+  }
+  openSignUp(){
+    this.showLogin=false
   }
 }
