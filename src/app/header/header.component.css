@@ -9,14 +9,15 @@
 }
 .nav ul {
     display: inline-flex;
-    list-style-type:none;
+    list-style-type: none;
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 .nav li{
+    text-decoration: none;
     padding-left: 15px;
     padding-top: 15px;
-    text-decoration: blueviolet;
 }
 .nav .nav-search {
     margin-top: 5px;
@@ -44,3 +45,4 @@
     border-left: none;
 
 }
+h1 a{color: blueviolet; text-decoration: none;}
