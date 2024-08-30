@@ -12,143 +12,38 @@
       "password": "abc123"
     },
     {
-      "id": "26b6",
+      "id": "dc54",
       "email": "",
       "password": ""
+    }
+  ],
+  "products": [
+    {
+      "id": "5c44",
+      "name": "IPhone15",
+      "price": "500000",
+      "category": "Mobiles",
+      "color": "Black",
+      "description": "iPhone 15 Pro Max Price in Pakistan 499,000 The Apple iPhone 15 Pro Max is set to upset the cell phone industry with its pivotal highlights and cutting-edge innovation. As the leading model of Apple’s most recent iPhone series, the 15 Pro Max is intended to convey unrivaled execution, predominant camera capacities, and a staggering showcase. Here is a thorough glance at what makes the iPhone 15 Pro Max a distinct advantage in cell phones",
+      "image": "https://pricehub.pk/product/iphone-15-pro-max-price-in-pakistan/"
     },
     {
-      "id": "487d",
-      "email": "",
-      "password": ""
+      "id": "55a5",
+      "name": "Samsung",
+      "Price": 200000,
+      "colour": "",
+      "category": "",
+      "description": "",
+      "image": "https://pricehub.pk/product/infinix-note-12-price-in-pakistan/"
     },
     {
-      "id": "f130",
-      "email": "Atta@gmail.com",
-      "password": "abc@123"
-    },
-    {
-      "id": "98ba",
-      "email": "Atta@gmail.com",
-      "password": "abc123"
-    },
-    {
-      "id": "4357",
-      "email": "asad",
-      "password": "asad"
-    },
-    {
-      "id": "0f10",
-      "email": "",
-      "password": ""
-    },
-    {
-      "id": "69b2",
-      "email": "",
-      "password": ""
-    },
-    {
-      "id": "e572",
-      "email": "",
-      "password": ""
-    },
-    {
-      "id": "08a5",
-      "email": "",
-      "password": ""
-    },
-    {
-      "id": "e257",
-      "email": "",
-      "password": ""
-    },
-    {
-      "id": "d963",
-      "email": "atta@gmail.com",
-      "password": "abc123"
-    },
-    {
-      "id": "5403",
-      "email": "",
-      "password": ""
-    },
-    {
-      "id": "db7a",
-      "email": "agag",
-      "password": "aagag"
-    },
-    {
-      "id": "579d",
-      "email": "ahahah",
-      "password": "AAH"
-    },
-    {
-      "id": "5625",
-      "email": "ATTA",
-      "password": "abc123"
-    },
-    {
-      "id": "b288",
-      "email": "ATTA",
-      "password": "abc123"
-    },
-    {
-      "id": "0b42",
-      "email": "ATTA",
-      "password": "abc123"
-    },
-    {
-      "id": "49ee",
-      "email": "ATTA",
-      "password": "abc123"
-    },
-    {
-      "id": "1c47",
-      "email": "Atta@gmail.com",
-      "password": "abc123"
-    },
-    {
-      "id": "5295",
-      "email": "sdsdd",
-      "password": "sds"
-    },
-    {
-      "id": "1a75",
-      "name": "",
-      "password": "",
-      "email": ""
-    },
-    {
-      "id": "aa3c",
-      "name": "",
-      "password": "",
-      "email": ""
-    },
-    {
-      "id": "ca44",
-      "email": "",
-      "password": ""
-    },
-    {
-      "id": "04aa",
-      "email": "Atta@gmail.com",
-      "password": "abc123"
-    },
-    {
-      "id": "fbc0",
-      "email": "",
-      "password": ""
-    },
-    {
-      "id": "3508",
-      "name": "",
-      "password": "",
-      "email": ""
-    },
-    {
-      "id": "9c18",
-      "name": "",
-      "password": "",
-      "email": ""
+      "id": "c97f",
+      "name": "iphone 11",
+      "Price": 1000000,
+      "colour": "blue",
+      "category": "Mobile",
+      "description": "hi hello how are you",
+      "image": "coming soon"
     }
   ]
 }

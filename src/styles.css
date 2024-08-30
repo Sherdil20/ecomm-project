@@ -1,4 +1,4 @@
-body{
+body .form-input{
     font-family: sans-serif;
 }
 .container{
@@ -28,4 +28,7 @@ color: blueviolet;
 }
 .error-p{
     color: red;
+}
+.p-message{
+    color:green;
 }
