@@ -21,7 +21,7 @@ addProductMessage:string | undefined;
       if (result){
         this.addProductMessage= 'Product is successfully added';
       }
-      setTimeout(()=>(this.addProductMessage = undefined), 3000);
+      setTimeout(()=>(this.addProductMessage = undefined), 3000)
     });
     
   }

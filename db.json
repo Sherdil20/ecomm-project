@@ -15,6 +15,11 @@
       "id": "dc54",
       "email": "",
       "password": ""
+    },
+    {
+      "id": "9db5",
+      "email": "",
+      "password": ""
     }
   ],
   "products": [
@@ -34,15 +39,6 @@
       "color": "cherry",
       "category": "Mobile",
       "description": "this is small intro of mobile",
-      "image": "https://pricehub.pk/wp-content/uploads/2024/07/iPhone-8-Price-in-Pakistan-fotor-2024071522475-450x338.png"
-    },
-    {
-      "id": "c97f",
-      "name": "iphone 11",
-      "price": 1000000,
-      "color": "blue",
-      "category": "Mobile",
-      "description": "hi hello how are you",
       "image": "https://pricehub.pk/wp-content/uploads/2024/07/iPhone-8-Price-in-Pakistan-fotor-2024071522475-450x338.png"
     }
   ]

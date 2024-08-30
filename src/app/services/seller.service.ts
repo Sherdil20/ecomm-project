@@ -30,7 +30,7 @@ isLoginError= new EventEmitter<boolean>(false)
   UserLogin(data:Login){
 
   this.http
-     .get(`http://localhost:3000/seller?email=${data.email}&password=${data.password}`,{
+     .get('http://localhost:3000/seller?email=${data.email}&password=${data.password}',{
       observe:'response'}).subscribe((result:any)=>{
     
         if(result && result.body && result.body.length){
