@@ -12,34 +12,29 @@
       "password": "abc123"
     },
     {
-      "id": "dc54",
-      "email": "",
-      "password": ""
-    },
-    {
-      "id": "9db5",
+      "id": "1c49",
       "email": "",
       "password": ""
     }
   ],
   "products": [
     {
-      "id": "5c44",
-      "name": "IPhone15",
-      "price": "500000",
+      "name": "IPhone15 Pro",
+      "Price": 5250000,
+      "colour": "Green",
       "category": "Mobile",
-      "color": "Black",
       "description": "iPhone 15 Pro Max Price in Pakistan 499,000 The Apple iPhone 15 Pro Max is set to upset the cell phone industry with its pivotal highlights and cutting-edge innovation. As the leading model of Apple’s most recent iPhone series, the 15 Pro Max is intended to convey unrivaled execution, predominant camera capacities, and a staggering showcase. Here is a thorough glance at what makes the iPhone 15 Pro Max a distinct advantage in cell phones",
-      "image": "https://pricehub.pk/wp-content/uploads/2024/07/Infinix-Note-12-Price-in-Pakistan-fotor-20240716154148-400x600.png"
+      "image": "https://pricehub.pk/wp-content/uploads/2024/07/Infinix-Note-12-Price-in-Pakistan-fotor-20240716154148-400x600.png",
+      "id": "5c44"
     },
     {
-      "id": "55a5",
       "name": "Samsung",
-      "price": 200000,
-      "color": "cherry",
+      "Price": 200006,
+      "colour": "cherry",
       "category": "Mobile",
       "description": "this is small intro of mobile",
-      "image": "https://pricehub.pk/wp-content/uploads/2024/07/iPhone-8-Price-in-Pakistan-fotor-2024071522475-450x338.png"
+      "image": "https://pricehub.pk/wp-content/uploads/2024/07/iPhone-8-Price-in-Pakistan-fotor-2024071522475-450x338.png",
+      "id": "55a5"
     }
   ]
 }
