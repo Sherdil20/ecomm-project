@@ -8,10 +8,28 @@ import { product } from '../data-type';
   styleUrls: ['./seller-home.component.css']
 })
 export class SellerHomeComponent implements OnInit {
-  productList:undefined | product[]
+  productList:undefined | product[];
+  productMessage:undefined|string;
   constructor(private product:ProductService){}
 
   ngOnInit():void{
+    this.list();
+  
+}
+deleteProduct(id:string){
+  console.warn("test id",id)
+
+  this.product.deleteProduct(id).subscribe((result)=>{
+    if(result){
+      this.productMessage="Product is deleted";
+      this.list();
+
+    }
+  })
+  setTimeout(()=>{
+    this.productMessage=undefined}, 3000);
+}
+list(){
   this.product.productList().subscribe((result)=>{
     console.warn(result)
     this.productList=result
