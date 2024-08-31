@@ -5,6 +5,11 @@
       "name": "Atta",
       "email": "atta@gmail.com",
       "password": "abc123"
+    },
+    {
+      "id": "f235",
+      "email": "qdff",
+      "password": "sdsds"
     }
   ],
   "products": [

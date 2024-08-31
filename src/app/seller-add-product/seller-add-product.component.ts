@@ -17,7 +17,6 @@ addProductMessage:string | undefined;
 
     submit(data:product){
     this.product.addProduct(data).subscribe((result)=>{
-      console.warn(result);
       if (result){
         this.addProductMessage= 'Product is successfully added';
       }

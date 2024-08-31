@@ -46,3 +46,20 @@
 
 }
 h1 a{color: blueviolet; text-decoration: none;}
+.suggested-result{
+    position: absolute;
+    display: list-item !important;
+    z-index: 10;
+    background-color: #fff;
+    width: 300px;
+    top: 40px;
+    border: 1px solid#dddd;
+}
+.suggested-result li{
+    border: 1px solid #fff;
+    padding: 5px;
+}
+.suggested-result a{
+    cursor: pointer;
+    color: blueviolet;
+}

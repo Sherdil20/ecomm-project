@@ -37,7 +37,6 @@ isLoginError= new EventEmitter<boolean>(false)
           localStorage.setItem('seller',JSON.stringify(result.body))
           this.router.navigate(['seller-home'])
         }else{
-          console.warn("login failed");
           this.isLoginError.emit(true)}
         })
       }
