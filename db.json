@@ -5,16 +5,6 @@
       "name": "Atta",
       "email": "atta@gmail.com",
       "password": "abc123"
-    },
-    {
-      "id": "d435",
-      "email": "Atta@gmail.com",
-      "password": "abc123"
-    },
-    {
-      "id": "1c49",
-      "email": "",
-      "password": ""
     }
   ],
   "products": [
@@ -35,6 +25,33 @@
       "description": "this is small intro of mobile",
       "image": "https://pricehub.pk/wp-content/uploads/2024/07/iPhone-8-Price-in-Pakistan-fotor-2024071522475-450x338.png",
       "id": "55a5"
+    },
+    {
+      "id": "49f7",
+      "name": "Hp Laptop",
+      "Price": 389000,
+      "colour": "Black",
+      "category": "Laptop",
+      "description": "ddjalkdjaskldalksjdlkasjdlkadjksicc ddkldjksdaks dsadjaskd",
+      "image": "https://www.czone.com.pk/images/content/5f8cb29e-a2a1-44ab-93b4-10146254b4ce.png"
+    },
+    {
+      "id": "3f26",
+      "name": "Hp Laptop bool",
+      "Price": 3324500,
+      "colour": "silver",
+      "category": "ChromeBook",
+      "description": "ddjalkdjaskldalksjdlkasjdlkadjksicc ddkldjksdaks dsadjaskd",
+      "image": "https://www.czone.com.pk/images/thumbnails-large/copy-37-czone.com.pk-1540-16199-070624103922.jpg"
+    },
+    {
+      "id": "dd9e",
+      "name": "Redme Tab",
+      "Price": 60000,
+      "colour": "Green",
+      "category": "Tablet",
+      "description": "redmi tablet ",
+      "image": "https://images.priceoye.pk/redmi-pad-se-pakistan-priceoye-z7cr7-500x500.webp"
     }
   ]
 }
