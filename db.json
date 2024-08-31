@@ -52,6 +52,33 @@
       "category": "Tablet",
       "description": "redmi tablet ",
       "image": "https://images.priceoye.pk/redmi-pad-se-pakistan-priceoye-z7cr7-500x500.webp"
+    },
+    {
+      "id": "f23b",
+      "name": "IPhone 13 Pro",
+      "Price": 6329292,
+      "colour": "pink",
+      "category": "mibile",
+      "description": "Iphone 13pro is new seatured phone made by Apple",
+      "image": "https://www.apple.com/newsroom/images/product/iphone/standard/Apple_iphone13_hero_09142021_inline.jpg.large.jpg"
+    },
+    {
+      "id": "1020",
+      "name": "Nokia 105 Classic",
+      "Price": 80000,
+      "colour": "Black",
+      "category": "Mobile",
+      "description": "General Features\nRelease Date\t2024-03-27\nSIM Support\tDual Sim\nPhone Dimensions\tN/A\nPhone Weight\tN/A\nOperating System\tS30+",
+      "image": "https://images.priceoye.pk/nokia-105-classic-pakistan-priceoye-w97ga-500x500.webp"
+    },
+    {
+      "id": "1389",
+      "name": "laptop 15inch",
+      "Price": 299292,
+      "colour": "Golden",
+      "category": "laptop",
+      "description": "Laptop Asus E510M Intel Celeron N4020 Processor, 4GB Ram, 128GB eMMC, Intel UHD Graphics,15.6-inch HD Display, Windows 11 Home - Peacock Blue ",
+      "image": "https://goldentech.com.sa/media/catalog/product/cache/8276e34a2b4790aea4e7d6152991d045/l/a/laptop_asus_e510_intel_celeron_n4020_processor_peacock_blue_0_2_1.jpg"
     }
   ]
 }
