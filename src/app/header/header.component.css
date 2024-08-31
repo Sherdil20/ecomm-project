@@ -32,7 +32,7 @@
     color: blueviolet;
     border: 1px solid blueviolet;
     border-radius:10px 0 0 10px;
-    height: 35px;
+    height: 40px;
     border-right: none;
 
 }
@@ -41,7 +41,7 @@
     color: blueviolet;
     border: 1px solid blueviolet;
     border-radius: 0 10px 10px 0;
-    height: 39px;
+    height: 40px;
     border-left: none;
 
 }
