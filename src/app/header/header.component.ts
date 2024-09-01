@@ -9,43 +9,44 @@ import { product } from '../data-type';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  menuType: String='default';
-  sellerName:string='';
-  searchResult: undefined| product[];
-constructor(private route:Router, private product:ProductService){}
+  menuType: String = 'default';
+  sellername: string = '';
+  searchResult: undefined | product[];
+  constructor(private route: Router, private product: ProductService) { }
 
-ngOnInit():void {
-  this.route.events.subscribe((val:any)=>{
-  if(val.url){
-    if(localStorage.getItem('seller') && val.url.includes('seller')){
-      this.menuType="seller";
-      if(localStorage.getItem('seller')){
-        let sellerStore=localStorage.getItem('seller');
-        let sellerData =sellerStore && JSON.parse(sellerStore);
-        this.sellerName=sellerData.name;
+  ngOnInit(): void {
+    this.route.events.subscribe((val: any) => {
+      if (val.url) {
+        if (localStorage.getItem('seller') && val.url.includes('seller')) {
+          let sellerStore= localStorage.getItem('seller');
+          let sellerData= sellerStore && JSON.parse(sellerStore);
+          this.sellername= sellerData.name;
+          this.menuType= "seller";
+      } else {
+        this.menuType = 'default';
       }
-    }else{
-      this.menuType='default'
-    }
-  } 
-  })
+    } 
+  });
 }
 logout(){
   localStorage.removeItem('seller');
   this.route.navigate(['/'])
 }
-searchProduct(query:KeyboardEvent){
-  if(query){
-    const element=query.target as HTMLInputElement;
-    this.product.searchProducts(element.value).subscribe((result)=>{
-      if (result.length>5){
-      result.length=5;
-    }
-      this.searchResult=result;
+searchProduct(query: KeyboardEvent){
+  if (query){
+    const element= query.target as HTMLInputElement;
+    this.product.searchProducts(element.value).subscribe((result) => {
+      if (result.length>3) {
+        result.length = 8;
+      }
+      this.searchResult = result;
     })
   }
 }
 hideSearch(){
-  this.searchResult= undefined
+  this.searchResult = undefined
+}
+submitSearch(val: string){
+  this.route.navigate([`search/${val}`])
 }
 }
