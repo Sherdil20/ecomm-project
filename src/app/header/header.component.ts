@@ -35,7 +35,7 @@ logout(){
 searchProduct(query: KeyboardEvent){
   if (query){
     const element= query.target as HTMLInputElement;
-    this.product.searchProducts(element.value).subscribe((result) => {
+    this.product.searchProduct(element.value).subscribe((result) => {
       if (result.length>3) {
         result.length = 8;
       }
