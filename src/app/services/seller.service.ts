@@ -34,8 +34,9 @@ isLoginError= new EventEmitter<boolean>(false)
      .get(`http://localhost:3000/seller?email=${data.email}&password=${data.password}`,{
       observe:'response'}).subscribe((result:any)=>{
     
-        if(result && result.body && result.body.length){
-          localStorage.setItem('seller',JSON.stringify(result.body))
+        if(result && result.body && result.body.length===1){
+          this.isLoginError.emit(false)
+          localStorage.setItem('seller',JSON.stringify(result.body[0]))
           this.router.navigate(['seller-home'])
         }else{
           this.isLoginError.emit(true)}

@@ -22,24 +22,6 @@
       "name": "qaiser",
       "password": "abc123",
       "email": "qaiser@mail.com"
-    },
-    {
-      "id": "03a7",
-      "name": "waqas",
-      "password": "abc",
-      "email": "waqas@mail.com"
-    },
-    {
-      "id": "7c43",
-      "name": "",
-      "password": "",
-      "email": ""
-    },
-    {
-      "id": "de0c",
-      "name": "",
-      "password": "",
-      "email": ""
     }
   ],
   "products": [
@@ -128,72 +110,6 @@
       "name": "abc",
       "email": "abc@mail.com",
       "password": "abc"
-    },
-    {
-      "id": "1c8e",
-      "name": "Atta",
-      "email": "Atta@maul.com",
-      "password": "abc123"
-    },
-    {
-      "id": "ad17",
-      "name": "Atta",
-      "email": "abc",
-      "password": "abcd"
-    },
-    {
-      "id": "dc4c",
-      "name": "tata",
-      "email": "tata",
-      "password": "ags"
-    },
-    {
-      "id": "2f7d",
-      "name": "",
-      "email": "",
-      "password": ""
-    },
-    {
-      "id": "ccbe",
-      "name": "seeti",
-      "email": "shhs",
-      "password": "abc"
-    },
-    {
-      "id": "01b2",
-      "name": "",
-      "email": "",
-      "password": ""
-    },
-    {
-      "id": "6239",
-      "name": "Atta",
-      "email": "asd",
-      "password": "aass"
-    },
-    {
-      "id": "694a",
-      "name": "qari",
-      "email": "qari@mail.com",
-      "password": "abc"
-    },
-    {
-      "id": "c64f",
-      "name": "",
-      "email": "",
-      "password": ""
-    },
-    {
-      "id": "125e",
-      "name": "Anwar",
-      "email": "anwar@mail.com",
-      "password": "abc"
-    },
-    {
-      "id": "5a3a",
-      "name": "abcd",
-      "email": "abcd",
-      "password": "abcd"
     }
   ]
 }

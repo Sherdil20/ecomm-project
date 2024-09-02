@@ -21,6 +21,7 @@ export class UserAuthComponent implements OnInit {
   }
 
   login(data: Login) {
+    this.user.userLogin(data)
   }
 
   openSignUp() {
