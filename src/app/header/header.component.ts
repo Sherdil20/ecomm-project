@@ -36,8 +36,8 @@ searchProduct(query: KeyboardEvent){
   if (query){
     const element= query.target as HTMLInputElement;
     this.product.searchProduct(element.value).subscribe((result) => {
-      if (result.length>3) {
-        result.length = 8;
+      if (result.length>3){
+        result.length = length;
       }
       this.searchResult = result;
     })
@@ -45,6 +45,9 @@ searchProduct(query: KeyboardEvent){
 }
 hideSearch(){
   this.searchResult = undefined
+}
+redirectToDetails(id:string){
+  this.route.navigate(['/details/'+id])
 }
 submitSearch(val: string){
   this.route.navigate([`search/${val}`])
