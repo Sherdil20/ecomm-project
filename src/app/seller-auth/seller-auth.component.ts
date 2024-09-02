@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { SellerService } from '../services/seller.service';
 import { Router } from '@angular/router';
-import { SignUp } from '../data-type';
+import { signUp } from '../data-type';
 import { Subscription } from 'rxjs';
 
 @Component({
@@ -18,14 +18,14 @@ export class SellerAuthComponent implements OnInit{
 ngOnInit():void{
   this.seller.reloadSeller()
 }
-  signUp(data:SignUp):void{
-    this.seller.userSignUp(data)
+  signUp(data:signUp):void{
+    this.seller.usersignUp(data)
     }
   
   
-  login(data:SignUp):void{
+  login(data:signUp):void{
     this.authError=""
-    this.seller.userSignUp(data)
+    this.seller.usersignUp(data)
     this.seller.isLoginError.subscribe((isError)=>{
       if(isError){
         this.authError="Email or password is not Correct"
@@ -35,7 +35,7 @@ ngOnInit():void{
   openLogin() {
     this.showLogin=true
   }
-  openSignUp(){
+  opensignUp(){
     this.showLogin=false
   }
 }

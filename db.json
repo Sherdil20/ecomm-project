@@ -1,5 +1,5 @@
 {
-  "seller": [
+  "sellers": [
     {
       "id": "b7f5",
       "name": "Atta",
@@ -7,43 +7,9 @@
       "password": "abc123"
     },
     {
-      "id": "f235",
-      "email": "qdff",
-      "password": "sdsds"
-    },
-    {
-      "id": "04b1",
-      "email": "aaa",
-      "password": "aaaaa"
-    },
-    {
-      "id": "d292",
-      "name": "aaaaa",
-      "password": "aaaaaaaa",
-      "email": "aaaaa"
-    },
-    {
-      "id": "fc43",
-      "name": "",
-      "password": "",
-      "email": ""
-    },
-    {
-      "id": "6604",
-      "name": "",
-      "password": "",
-      "email": ""
-    },
-    {
-      "id": "2eed",
+      "id": "9321",
       "email": "",
       "password": ""
-    },
-    {
-      "id": "a17e",
-      "name": "",
-      "password": "",
-      "email": ""
     }
   ],
   "products": [
@@ -118,6 +84,14 @@
       "description": "Laptop Asus E510M Intel Celeron N4020 Processor, 4GB Ram, 128GB eMMC, Intel UHD Graphics,15.6-inch HD Display, Windows 11 Home - Peacock Blue ",
       "image": "https://goldentech.com.sa/media/catalog/product/cache/8276e34a2b4790aea4e7d6152991d045/l/a/laptop_asus_e510_intel_celeron_n4020_processor_peacock_blue_0_2_1.jpg",
       "id": "1389"
+    }
+  ],
+  "users": [
+    {
+      "id": "ae3a",
+      "name": "Atta",
+      "email": "atta@email.com",
+      "password": "abc123"
     }
   ]
 }
