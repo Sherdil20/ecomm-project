@@ -1,16 +1,5 @@
 {
-  "sellers": [
-    {
-      "id": "b7f5",
-      "name": "Atta",
-      "email": "atta@gmail.com",
-      "password": "abc123"
-    },
-    {
-      "id": "9321",
-      "email": "",
-      "password": ""
-    },
+  "seller": [
     {
       "id": "5eff",
       "email": "Atta@gmail.com",
@@ -18,8 +7,39 @@
     },
     {
       "id": "5b62",
+      "name": "Asad",
       "email": "asad",
       "password": "asad"
+    },
+    {
+      "id": "bc19",
+      "name": "Atta",
+      "password": "abcds",
+      "email": "asad@mail.com"
+    },
+    {
+      "id": "e7bc",
+      "name": "qaiser",
+      "password": "abc123",
+      "email": "qaiser@mail.com"
+    },
+    {
+      "id": "03a7",
+      "name": "waqas",
+      "password": "abc",
+      "email": "waqas@mail.com"
+    },
+    {
+      "id": "7c43",
+      "name": "",
+      "password": "",
+      "email": ""
+    },
+    {
+      "id": "de0c",
+      "name": "",
+      "password": "",
+      "email": ""
     }
   ],
   "products": [
@@ -138,6 +158,42 @@
       "name": "seeti",
       "email": "shhs",
       "password": "abc"
+    },
+    {
+      "id": "01b2",
+      "name": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "6239",
+      "name": "Atta",
+      "email": "asd",
+      "password": "aass"
+    },
+    {
+      "id": "694a",
+      "name": "qari",
+      "email": "qari@mail.com",
+      "password": "abc"
+    },
+    {
+      "id": "c64f",
+      "name": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "125e",
+      "name": "Anwar",
+      "email": "anwar@mail.com",
+      "password": "abc"
+    },
+    {
+      "id": "5a3a",
+      "name": "abcd",
+      "email": "abcd",
+      "password": "abcd"
     }
   ]
 }

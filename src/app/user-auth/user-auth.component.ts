@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../services/user.service';
-import { signUp } from '../data-type';
+import { Login, signUp } from '../data-type';
 
 @Component({
   selector: 'app-user-auth',
@@ -8,17 +8,26 @@ import { signUp } from '../data-type';
   styleUrls: ['./user-auth.component.css']
 })
 export class UserAuthComponent implements OnInit {
-  constructor(private user:UserService){
+  showLogin: boolean = true;
 
-  }
-
+  constructor(private user: UserService) { }
 
   ngOnInit(): void {
     this.user.userAuthReload();
   }
-  signUp(data:signUp){
-this.user.userSignUp(data)
 
+  signUp(data: signUp) {
+    this.user.userSignUp(data);
   }
 
+  login(data: Login) {
+  }
+
+  openSignUp() {
+    this.showLogin = false;
+  }
+
+  openLogin() {
+    this.showLogin = true;
+  }
 }
