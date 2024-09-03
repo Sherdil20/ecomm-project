@@ -87,6 +87,12 @@
       "name": "Atta",
       "email": "atta@email.com",
       "password": "abc123"
+    },
+    {
+      "id": "8778",
+      "name": "asad",
+      "email": "asad@email.com",
+      "password": "abc123"
     }
   ],
   "cart": [
@@ -113,6 +119,150 @@
       "quantity": 5,
       "userId": "ae3a",
       "productId": "5c44"
+    },
+    {
+      "id": "9068",
+      "name": "Nokia 105 Classic",
+      "price": 80000,
+      "color": "Black",
+      "category": "Mobile",
+      "description": "General Features Release Date 2024-03-27 SIM Support Dual Sim Phone Operating System S30+",
+      "image": "https://images.priceoye.pk/nokia-105-classic-pakistan-priceoye-w97ga-500x500.webp",
+      "quantity": 1,
+      "productId": "1020",
+      "userId": null
+    },
+    {
+      "id": "5624",
+      "name": "Hp Laptop bool",
+      "price": 3324500,
+      "color": "silver",
+      "category": "ChromeBook",
+      "description": "ddjalkdjaskldalksjdlkasjdlkadjksicc ddkldjksdaks dsadjaskd",
+      "image": "https://www.czone.com.pk/images/thumbnails-large/copy-37-czone.com.pk-1540-16199-070624103922.jpg",
+      "quantity": 1,
+      "productId": "3f26",
+      "userId": null
+    },
+    {
+      "id": "a95f",
+      "name": "IPhone 13 Pro",
+      "price": 6329292,
+      "color": "pink",
+      "category": "mibile",
+      "description": "Iphone 13pro is new seatured phone made by Apple",
+      "image": "https://www.apple.com/newsroom/images/product/iphone/standard/Apple_iphone13_hero_09142021_inline.jpg.large.jpg",
+      "quantity": 3,
+      "productId": "f23b",
+      "userId": null
+    },
+    {
+      "id": "9760",
+      "name": "IPhone 13 Pro",
+      "price": 6329292,
+      "color": "pink",
+      "category": "mibile",
+      "description": "Iphone 13pro is new seatured phone made by Apple",
+      "image": "https://www.apple.com/newsroom/images/product/iphone/standard/Apple_iphone13_hero_09142021_inline.jpg.large.jpg",
+      "quantity": 1,
+      "userId": "ae3a",
+      "productId": "f23b"
+    },
+    {
+      "id": "834f",
+      "name": "IPhone15 Pro",
+      "price": 235678,
+      "color": "Green",
+      "category": "Mobile",
+      "description": "iPhone 15 Pro Max Price in Pakistan 499,000 The Apple iPhone 15 Pro Max is set to upset the cell phone industry with its pivotal highlights and cutting-edge innovation. As the leading model of Apple’s most recent iPhone series, the 15 Pro Max is intended to convey unrivaled execution, predominant camera capacities, and a staggering showcase. Here is a thorough glance at what makes the iPhone 15 Pro Max a distinct advantage in cell phones",
+      "image": "https://pricehub.pk/wp-content/uploads/2024/07/Infinix-Note-12-Price-in-Pakistan-fotor-20240716154148-400x600.png",
+      "quantity": 1,
+      "userId": "8778",
+      "productId": "5c44"
+    },
+    {
+      "id": "560a",
+      "name": "Redme Tab",
+      "price": 60000,
+      "color": "Green",
+      "category": "Tablet",
+      "description": "redmi tablet ",
+      "image": "https://images.priceoye.pk/redmi-pad-se-pakistan-priceoye-z7cr7-500x500.webp",
+      "quantity": 1,
+      "userId": "8778",
+      "productId": "dd9e"
+    },
+    {
+      "id": "3644",
+      "name": "laptop 15inch",
+      "price": 34567,
+      "color": "defrth",
+      "category": "laptop",
+      "description": "Laptop Asus E510M Intel Celeron N4020 Processor, 4GB Ram, 128GB eMMC, Intel UHD Graphics,15.6-inch HD Display, Windows 11 Home - Peacock Blue ",
+      "image": "https://goldentech.com.sa/media/catalog/product/cache/8276e34a2b4790aea4e7d6152991d045/l/a/laptop_asus_e510_intel_celeron_n4020_processor_peacock_blue_0_2_1.jpg",
+      "quantity": 1,
+      "userId": "8778",
+      "productId": "1389"
+    },
+    {
+      "id": "431a",
+      "name": "Samsung",
+      "price": "200006",
+      "color": "Voilet",
+      "category": "Mobile",
+      "description": "this is small intro of mobile",
+      "image": "https://pricehub.pk/wp-content/uploads/2024/07/iPhone-8-Price-in-Pakistan-fotor-2024071522475-450x338.png",
+      "quantity": 1,
+      "productId": "55a5",
+      "userId": null
+    },
+    {
+      "id": "ffc8",
+      "name": "laptop 15inch",
+      "price": 34567,
+      "color": "defrth",
+      "category": "laptop",
+      "description": "Laptop Asus E510M Intel Celeron N4020 Processor, 4GB Ram, 128GB eMMC, Intel UHD Graphics,15.6-inch HD Display, Windows 11 Home - Peacock Blue ",
+      "image": "https://goldentech.com.sa/media/catalog/product/cache/8276e34a2b4790aea4e7d6152991d045/l/a/laptop_asus_e510_intel_celeron_n4020_processor_peacock_blue_0_2_1.jpg",
+      "quantity": 1,
+      "productId": "1389",
+      "userId": null
+    },
+    {
+      "id": "1e83",
+      "name": "Nokia 105 Classic",
+      "price": 80000,
+      "color": "Black",
+      "category": "Mobile",
+      "description": "General Features Release Date 2024-03-27 SIM Support Dual Sim Phone Operating System S30+",
+      "image": "https://images.priceoye.pk/nokia-105-classic-pakistan-priceoye-w97ga-500x500.webp",
+      "quantity": 1,
+      "productId": "1020",
+      "userId": null
+    },
+    {
+      "id": "5b36",
+      "name": "IPhone15 Pro",
+      "price": 235678,
+      "color": "Green",
+      "category": "Mobile",
+      "description": "iPhone 15 Pro Max Price in Pakistan 499,000 The Apple iPhone 15 Pro Max is set to upset the cell phone industry with its pivotal highlights and cutting-edge innovation. As the leading model of Apple’s most recent iPhone series, the 15 Pro Max is intended to convey unrivaled execution, predominant camera capacities, and a staggering showcase. Here is a thorough glance at what makes the iPhone 15 Pro Max a distinct advantage in cell phones",
+      "image": "https://pricehub.pk/wp-content/uploads/2024/07/Infinix-Note-12-Price-in-Pakistan-fotor-20240716154148-400x600.png",
+      "quantity": 1,
+      "userId": "8778",
+      "productId": "5c44"
+    },
+    {
+      "id": "e63f",
+      "name": "Hp Laptop",
+      "price": 389000,
+      "color": "Black",
+      "category": "Laptop",
+      "description": "ddjalkdjaskldalksjdlkasjdlkadjksicc ddkldjksdaks dsadjaskd",
+      "image": "https://www.czone.com.pk/images/content/5f8cb29e-a2a1-44ab-93b4-10146254b4ce.png",
+      "quantity": 1,
+      "userId": "8778",
+      "productId": "49f7"
     }
   ]
 }
