@@ -28,4 +28,14 @@ handleQuantity(val:String){
     this.productQuantity-=1;
   }
 }
+AddToCart(){
+  if(this.productsData){
+this.productsData.quantity=this.productQuantity;
+if(!localStorage.getItem('user')){
+  console.warn(this.productsData);
+  this.product.localAddToCart(this.productsData);
+
+}
+}
+}
 }
