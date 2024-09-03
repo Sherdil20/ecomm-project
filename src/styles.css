@@ -41,3 +41,12 @@ color: blueviolet;
     background-color: black;
     border: 5px;
 }
+.invalid-input{
+    color: red;
+    font-size: 12px;
+    margin: -1px;
+}
+button:disabled{
+    cursor: not-allowed;
+    color: red;
+}

@@ -9,7 +9,7 @@ import { Login, signUp } from '../data-type';
 })
 export class UserAuthComponent implements OnInit {
   showLogin: boolean = true;
-
+  authError:string='';
   constructor(private user: UserService) { }
 
   ngOnInit(): void {
@@ -19,9 +19,13 @@ export class UserAuthComponent implements OnInit {
   signUp(data: signUp) {
     this.user.userSignUp(data);
   }
-
   login(data: Login) {
     this.user.userLogin(data)
+    this.user.inValidUserAuth.subscribe((result)=>{
+      if(result){
+        this.authError="Enter Correct Details"
+    }
+  })
   }
 
   openSignUp() {

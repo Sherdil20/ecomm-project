@@ -10,11 +10,10 @@ import { Subscription } from 'rxjs';
   styleUrls: ['./seller-auth.component.css']
 })
 export class SellerAuthComponent implements OnInit{
-  constructor(private seller:SellerService, private router:Router
-  ){}
   showLogin=true;
   authError:string='';
-
+  constructor(private seller:SellerService, private router:Router){}
+  
 ngOnInit():void{
   this.seller.reloadSeller()
 }
@@ -22,13 +21,11 @@ ngOnInit():void{
     this.seller.usersignUp(data)
     }
   
-  
   login(data:Login):void{
-    this.authError=""
     this.seller.UserLogin(data)
-    this.seller.isLoginError.subscribe((isError)=>{
-      if(isError){
-        this.authError="Email or password is not Correct"
+    this.seller.isLoginError.subscribe((result)=>{
+      if(result){
+        this.authError="Enter Correct Details" 
     }
   })
   }

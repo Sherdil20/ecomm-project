@@ -11,9 +11,9 @@ export class SellerService {
 isSellerLoggedIn= new BehaviorSubject<boolean>(false)
 isLoginError= new EventEmitter<boolean>(false)
   constructor(private http:HttpClient, private router:Router) {}
-  usersignUp(data:signUp){
+  usersignUp(user:signUp){
      this.http.post('http://localhost:3000/seller',
-      data,
+      user,
       {observe:'response'}).subscribe((result)=>{
        if(result){  
       localStorage.setItem('seller',JSON.stringify(result.body))
@@ -21,7 +21,6 @@ isLoginError= new EventEmitter<boolean>(false)
        }
       })
      }
-    
     reloadSeller(){
       if(localStorage.getItem('seller')){
         this.isSellerLoggedIn.next(true)
@@ -29,12 +28,11 @@ isLoginError= new EventEmitter<boolean>(false)
       }
     }
   UserLogin(data:Login){
-
-  this.http
-     .get(`http://localhost:3000/seller?email=${data.email}&password=${data.password}`,{
-      observe:'response'}).subscribe((result:any)=>{
+      this.http
+     .get<signUp[]>(`http://localhost:3000/seller?email=${data.email}&password=${data.password}`,{
+      observe:'response'}).subscribe((result)=>{
     
-        if(result && result.body && result.body.length===1){
+        if(result && result.body?.length){
           this.isLoginError.emit(false)
           localStorage.setItem('seller',JSON.stringify(result.body[0]))
           this.router.navigate(['seller-home'])
@@ -43,3 +41,4 @@ isLoginError= new EventEmitter<boolean>(false)
         })
       }
 }
+

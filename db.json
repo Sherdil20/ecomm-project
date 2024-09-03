@@ -2,27 +2,10 @@
   "seller": [
     {
       "id": "5eff",
-      "email": "Atta@gmail.com",
+      "name": "atta",
+      "email": "atta@email.com",
       "password": "abc123"
-    },
-    {
-      "id": "5b62",
-      "name": "Asad",
-      "email": "asad",
-      "password": "asad"
-    },
-    {
-      "id": "bc19",
-      "name": "Atta",
-      "password": "abcds",
-      "email": "asad@mail.com"
-    },
-    {
-      "id": "e7bc",
-      "name": "qaiser",
-      "password": "abc123",
-      "email": "qaiser@mail.com"
-    }
+    }    
   ],
   "products": [
     {
@@ -104,12 +87,6 @@
       "name": "Atta",
       "email": "atta@email.com",
       "password": "abc123"
-    },
-    {
-      "id": "08f8",
-      "name": "abc",
-      "email": "abc@mail.com",
-      "password": "abc"
     }
   ]
 }
