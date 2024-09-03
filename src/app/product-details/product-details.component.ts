@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ProductService } from '../services/product.service';
-import { product } from '../data-type';
+import { cart, product } from '../data-type';
 
 @Component({
   selector: 'app-product-details',
@@ -43,9 +43,27 @@ AddToCart(){
   if(this.productsData){
 this.productsData.quantity=this.productQuantity;
 if(!localStorage.getItem('user')){
-  console.warn(this.productsData);
   this.product.localAddToCart(this.productsData);
   this.removeCart=true
+  
+}else{
+  let user=localStorage.getItem('user');
+  let userId=user && JSON.parse(user).id
+  let cartData:cart={
+    ...this.productsData,
+    userId,
+    productId:this.productsData.id,
+  
+  }
+  delete cartData.id;
+  console.warn(cartData);
+  this.product.addToCart(cartData).subscribe((result: any)=>{
+    if(result){
+      alert('Product is added in Cart')
+    }
+    
+  })
+  
 
 }
 }

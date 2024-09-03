@@ -5,7 +5,7 @@
       "name": "atta",
       "email": "atta@email.com",
       "password": "abc123"
-    }    
+    }
   ],
   "products": [
     {
@@ -87,6 +87,32 @@
       "name": "Atta",
       "email": "atta@email.com",
       "password": "abc123"
+    }
+  ],
+  "cart": [
+    {
+      "id": "81bd",
+      "name": "IPhone15 Pro",
+      "price": 235678,
+      "color": "Green",
+      "category": "Mobile",
+      "description": "iPhone 15 Pro Max Price in Pakistan 499,000 The Apple iPhone 15 Pro Max is set to upset the cell phone industry with its pivotal highlights and cutting-edge innovation. As the leading model of Apple’s most recent iPhone series, the 15 Pro Max is intended to convey unrivaled execution, predominant camera capacities, and a staggering showcase. Here is a thorough glance at what makes the iPhone 15 Pro Max a distinct advantage in cell phones",
+      "image": "https://pricehub.pk/wp-content/uploads/2024/07/Infinix-Note-12-Price-in-Pakistan-fotor-20240716154148-400x600.png",
+      "quantity": 1,
+      "userId": "ae3a",
+      "productId": "5c44"
+    },
+    {
+      "id": "d58a",
+      "name": "IPhone15 Pro",
+      "price": 235678,
+      "color": "Green",
+      "category": "Mobile",
+      "description": "iPhone 15 Pro Max Price in Pakistan 499,000 The Apple iPhone 15 Pro Max is set to upset the cell phone industry with its pivotal highlights and cutting-edge innovation. As the leading model of Apple’s most recent iPhone series, the 15 Pro Max is intended to convey unrivaled execution, predominant camera capacities, and a staggering showcase. Here is a thorough glance at what makes the iPhone 15 Pro Max a distinct advantage in cell phones",
+      "image": "https://pricehub.pk/wp-content/uploads/2024/07/Infinix-Note-12-Price-in-Pakistan-fotor-20240716154148-400x600.png",
+      "quantity": 5,
+      "userId": "ae3a",
+      "productId": "5c44"
     }
   ]
 }
