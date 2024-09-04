@@ -22,7 +22,7 @@ border-radius: 15px;
 color: blueviolet;
 }
 .form-button {
-    height: 35px;
+    height: fit-content;
     border: 1px solid blueviolet;
     border-radius: 15px;
     cursor: pointer;
