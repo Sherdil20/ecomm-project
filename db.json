@@ -73,11 +73,11 @@
     },
     {
       "name": "laptop 15inch",
-      "price": 34567,
-      "color": "defrth",
+      "price": "34567",
+      "color": "gold",
       "category": "laptop",
       "description": "Laptop Asus E510M Intel Celeron N4020 Processor, 4GB Ram, 128GB eMMC, Intel UHD Graphics,15.6-inch HD Display, Windows 11 Home - Peacock Blue ",
-      "image": "https://goldentech.com.sa/media/catalog/product/cache/8276e34a2b4790aea4e7d6152991d045/l/a/laptop_asus_e510_intel_celeron_n4020_processor_peacock_blue_0_2_1.jpg",
+      "image": "https://images.pexels.com/photos/212372/pexels-photo-212372.jpeg?cs=srgb&dl=pexels-wdnet-212372.jpg&fm=jpg",
       "id": "1389"
     }
   ],
@@ -93,13 +93,19 @@
       "name": "asad",
       "email": "asad@email.com",
       "password": "abc"
+    },
+    {
+      "id": "522a",
+      "name": "azhar",
+      "email": "azhar@email.com",
+      "password": "abc"
     }
   ],
   "cart": [
     {
       "id": "e74f",
       "name": "Redme Tab",
-      "price": 60000,
+      "price": 600,
       "color": "Green",
       "category": "Tablet",
       "description": "redmi tablet ",
@@ -111,7 +117,7 @@
     {
       "id": "1047",
       "name": "IPhone15 Pro",
-      "price": 235678,
+      "price": 200,
       "color": "Green",
       "category": "Mobile",
       "description": "iPhone 15 Pro Max Price in Pakistan 499,000 The Apple iPhone 15 Pro Max is set to upset the cell phone industry with its pivotal highlights and cutting-edge innovation. As the leading model of Apple’s most recent iPhone series, the 15 Pro Max is intended to convey unrivaled execution, predominant camera capacities, and a staggering showcase. Here is a thorough glance at what makes the iPhone 15 Pro Max a distinct advantage in cell phones",
@@ -123,7 +129,7 @@
     {
       "id": "049a",
       "name": "Samsung",
-      "price": "200006",
+      "price": "200",
       "color": "Voilet",
       "category": "Mobile",
       "description": "this is small intro of mobile",
@@ -135,7 +141,7 @@
     {
       "id": "d682",
       "name": "Nokia 105 Classic",
-      "price": 80000,
+      "price": 800,
       "color": "Black",
       "category": "Mobile",
       "description": "General Features Release Date 2024-03-27 SIM Support Dual Sim Phone Operating System S30+",
@@ -147,7 +153,7 @@
     {
       "id": "67df",
       "name": "laptop 15inch",
-      "price": 34567,
+      "price": 300,
       "color": "defrth",
       "category": "laptop",
       "description": "Laptop Asus E510M Intel Celeron N4020 Processor, 4GB Ram, 128GB eMMC, Intel UHD Graphics,15.6-inch HD Display, Windows 11 Home - Peacock Blue ",
@@ -159,7 +165,7 @@
     {
       "id": "5416",
       "name": "IPhone 13 Pro",
-      "price": 6329292,
+      "price": 200,
       "color": "pink",
       "category": "mibile",
       "description": "Iphone 13pro is new seatured phone made by Apple",
@@ -171,7 +177,7 @@
     {
       "id": "150a",
       "name": "IPhone15 Pro",
-      "price": 235678,
+      "price": 100,
       "color": "Green",
       "category": "Mobile",
       "description": "iPhone 15 Pro Max Price in Pakistan 499,000 The Apple iPhone 15 Pro Max is set to upset the cell phone industry with its pivotal highlights and cutting-edge innovation. As the leading model of Apple’s most recent iPhone series, the 15 Pro Max is intended to convey unrivaled execution, predominant camera capacities, and a staggering showcase. Here is a thorough glance at what makes the iPhone 15 Pro Max a distinct advantage in cell phones",
@@ -183,7 +189,7 @@
     {
       "id": "28fd",
       "name": "IPhone 13 Pro",
-      "price": 6329292,
+      "price": 300,
       "color": "pink",
       "category": "mibile",
       "description": "Iphone 13pro is new seatured phone made by Apple",
@@ -191,6 +197,54 @@
       "quantity": 1,
       "userId": "ae3a",
       "productId": "f23b"
+    },
+    {
+      "id": "6153",
+      "name": "laptop 15inch",
+      "price": "300",
+      "color": "gold",
+      "category": "laptop",
+      "description": "Laptop Asus E510M Intel Celeron N4020 Processor, 4GB Ram, 128GB eMMC, Intel UHD Graphics,15.6-inch HD Display, Windows 11 Home - Peacock Blue ",
+      "image": "https://images.pexels.com/photos/212372/pexels-photo-212372.jpeg?cs=srgb&dl=pexels-wdnet-212372.jpg&fm=jpg",
+      "quantity": 1,
+      "productId": "1389",
+      "userId": null
+    },
+    {
+      "id": "ca70",
+      "name": "IPhone 13 Pro",
+      "price": 200,
+      "color": "pink",
+      "category": "mibile",
+      "description": "Iphone 13pro is new seatured phone made by Apple",
+      "image": "https://www.apple.com/newsroom/images/product/iphone/standard/Apple_iphone13_hero_09142021_inline.jpg.large.jpg",
+      "quantity": 1,
+      "userId": "522a",
+      "productId": "f23b"
+    },
+    {
+      "id": "01fa",
+      "name": "Hp Laptop bool",
+      "price": 300,
+      "color": "silver",
+      "category": "ChromeBook",
+      "description": "ddjalkdjaskldalksjdlkasjdlkadjksicc ddkldjksdaks dsadjaskd",
+      "image": "https://www.czone.com.pk/images/thumbnails-large/copy-37-czone.com.pk-1540-16199-070624103922.jpg",
+      "quantity": 1,
+      "userId": "522a",
+      "productId": "3f26"
+    },
+    {
+      "id": "f5a3",
+      "name": "Nokia 105 Classic",
+      "price": 80000,
+      "color": "Black",
+      "category": "Mobile",
+      "description": "General Features Release Date 2024-03-27 SIM Support Dual Sim Phone Operating System S30+",
+      "image": "https://images.priceoye.pk/nokia-105-classic-pakistan-priceoye-w97ga-500x500.webp",
+      "quantity": 4,
+      "userId": "522a",
+      "productId": "1020"
     }
   ]
 }

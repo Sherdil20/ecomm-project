@@ -54,7 +54,6 @@ cartDataList.forEach((product:product,index)=>{
   setTimeout(()=>{
   this.product.addToCart(cartData).subscribe((result)=>{
     if(result){
-      console.warn('Item stored in DB');
     }
   })
 },500);
