@@ -28,7 +28,7 @@ popularProducts(){
   return this.http.get<product[]>('http://localhost:3000/products?_limit=5');
 }
 trendyProducts(){
-  return this.http.get<product[]>("http://localhost:3000/products?_limit=8");
+  return this.http.get<product[]>('http://localhost:3000/products?_limit=8');
 }
 searchProduct(query:string){
   return this.http.get<product[]>(`http://localhost:3000/products?q=${query}`);
@@ -38,6 +38,7 @@ localAddToCart(data:product){
   let localCart = localStorage.getItem('localCart');
   if(!localCart){
     localStorage.setItem('localCart',JSON.stringify([data]));
+    this.cartData.emit([data]);
   }else{
     cartData=JSON.parse(localCart);
     cartData.push(data)
@@ -58,5 +59,15 @@ if(cartData){
 }
 addToCart(cartData:cart){
   return this.http.post('http://localhost:3000/cart',cartData);
+    }
+    getCartList(userId:string){
+      return this.http.get<product[]>('http://localhost:3000/cart?userId='+userId,
+      {observe:'response'}).subscribe((result)=>{
+        console.warn(result);
+        if (result && result.body){
+          this.cartData.emit(result.body);
+        }
+        
+      })
     }
 }

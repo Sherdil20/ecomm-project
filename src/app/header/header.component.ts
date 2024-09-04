@@ -48,7 +48,8 @@ logout(){
 }
 userLogout(){
   localStorage.removeItem('user');
-  this.route.navigate(['/user-auth'])
+  this.route.navigate(['/user-auth']);
+  this.product.cartData.emit([]);
 }
 searchProduct(query: KeyboardEvent){
   if (query){
