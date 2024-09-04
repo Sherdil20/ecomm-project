@@ -50,3 +50,6 @@ button:disabled{
     cursor: not-allowed;
     color: red;
 }
+.max-width{
+    width: 100%;
+}
