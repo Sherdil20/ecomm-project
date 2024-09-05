@@ -246,5 +246,15 @@
       "userId": "522a",
       "productId": "1020"
     }
+  ],
+  "orders": [
+    {
+      "id": "c876",
+      "email": "azhar@email.com",
+      "address": "swhuj56mk klkl1212",
+      "contact": 38888383,
+      "totalPrice": 320900,
+      "userId": "522a"
+    }
   ]
 }

@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { priceSummary } from '../data-type';
-import { ActivatedRoute } from '@angular/router';
+import { Component, OnInit } from '@angular/core'
+import { ProductService } from '../services/product.service';
+import { order } from '../data-type';
 
 @Component({
   selector: 'app-checkout',
@@ -9,16 +9,38 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class CheckoutComponent implements OnInit {
 
-
-  constructor(private route: ActivatedRoute) { }
-total?: number=0;
+totalPrice:number | undefined
+  constructor(private product:ProductService) { }
 
 ngOnInit(): void {
-  this.route.queryParamMap.subscribe(params => {
-    const paramValue = params.get('total');
-    let val=  paramValue != null? +paramValue:0;
-    this.total=val;
+  this.product.currentCart().subscribe((result: any) => {
+    let price = 0;
+    result.forEach((item: {
+      quantity: any; price: string | number;
+    }) => {
+      if (item.quantity) {
+        price = price + (+item.price * +item.quantity)
+
+      }
+    })
+    this.totalPrice=price+(price/10)+100-(price/10);
   });
 }
-
+orderNow(data:{email:string,address:string,contact:string}){
+  let user=localStorage.getItem('user');
+  let userId= user && JSON.parse(user).id;
+  if(this.totalPrice){
+    let orderData:order ={
+      ...data,
+      totalPrice:this.totalPrice,
+      userId
+    }
+    this.product.orderNow(orderData).subscribe((result)=>{
+      if(result){
+        alert('Your order Placed')
+      }
+    })
+  }
+  
+}
 }
