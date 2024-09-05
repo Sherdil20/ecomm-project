@@ -9,7 +9,7 @@
                 <li><span>Name: {{cart.name}}</span></li>
                 <li><span>Price: {{cart.price}}</span></li>
                 <li><span>Quantity: {{cart.quantity}}</span></li>
-                <li><button class="form-button">Remove to Cart</button></li>
+                <li><button class="form-button" (click)="removeToCart(cart.id)">Remove to Cart</button></li>
             </ul>
         </div>
         <div class="col-sm-4 summary">

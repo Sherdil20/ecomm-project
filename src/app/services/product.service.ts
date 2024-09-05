@@ -91,6 +91,6 @@ export class ProductService {
     })
   }
   cancelOrder(orderId:any){
-return this.http.delete('http://localhost;3000/orders/'+orderId);
+return this.http.delete('http://localhost:3000/orders/'+orderId);
   }
 }
