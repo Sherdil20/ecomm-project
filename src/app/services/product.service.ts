@@ -69,7 +69,7 @@ export class ProductService {
 
       })
   }
-  removeFromCart(cartId: number) {
+  removeFromCart(cartId: any|undefined) {
     return this.http.delete('http://localhost:3000/cart/'+cartId);
   }
   currentCart() {
@@ -86,10 +86,11 @@ export class ProductService {
     return this.http.get<order[]>('http://localhost:3000/orders?userId='+userData.id);
   }
   deleteCartItems(cartId:any){
-    return this.http.delete('http://localhost:3000/cart'+cartId,{observe:'response'}).subscribe((result)=>{
-      if(result){
+    return this.http.delete('http://localhost:3000/cart/'+cartId,{observe:'response'}).subscribe((result)=>{
         this.cartData.emit([])
-      }
     })
+  }
+  cancelOrder(orderId:any){
+return this.http.delete('http://localhost;3000/orders/'+orderId);
   }
 }
