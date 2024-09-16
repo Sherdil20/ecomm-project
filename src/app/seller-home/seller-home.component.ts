@@ -19,7 +19,7 @@ export class SellerHomeComponent implements OnInit {
     this.list();
   
 }
-deleteProduct(id:string){
+deleteProduct(id:any){
   this.product.deleteProduct(id).subscribe((result)=>{
     if(result){
       this.productMessage="Product is deleted";

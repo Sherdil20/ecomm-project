@@ -12,7 +12,7 @@ export class UserService {
   inValidUserAuth= new EventEmitter<boolean>(false)
   constructor(private http:HttpClient, private router:Router) { }
   userSignUp(user:signUp){
-    this.http.post("http://localhost:3000/users",user,{observe:'response'})
+    this.http.post('http://localhost:3000/users',user,{observe:'response'})
 .subscribe((result)=>{
   if (result){
     localStorage.setItem('user',JSON.stringify(result.body));
@@ -26,9 +26,9 @@ this.http.get<signUp[]>(`http://localhost:3000/users?email=${data.email}&passwor
   observe:'response'
 }).subscribe((result)=>{
   if(result && result.body?.length){
-    this.inValidUserAuth.emit(false) 
     localStorage.setItem('user',JSON.stringify(result.body[0]));
     this.router.navigate(['/'])
+    this.inValidUserAuth.emit(false) 
   }else{
     this.inValidUserAuth.emit(true)}
   
@@ -36,7 +36,6 @@ this.http.get<signUp[]>(`http://localhost:3000/users?email=${data.email}&passwor
   }
   userAuthReload(){
     if(localStorage.getItem('user')){
-      this.isuserLoggedIn.next(true)
       this.router.navigate(['/']);
     }
   }

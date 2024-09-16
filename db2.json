@@ -58,7 +58,7 @@
       "name": "IPhone 13 Pro",
       "price": 6329292,
       "color": "pink",
-      "category": "mobile",
+      "category": "mibile",
       "description": "Iphone 13pro is new seatured phone made by Apple",
       "image": "https://www.apple.com/newsroom/images/product/iphone/standard/Apple_iphone13_hero_09142021_inline.jpg.large.jpg"
     },
@@ -89,27 +89,105 @@
       "password": "abc123"
     },
     {
-      "id": "124f",
+      "id": "d35e",
       "name": "asad",
       "email": "asad@email.com",
       "password": "abc"
     },
     {
-      "id": "e9f2",
-      "name": "azad",
-      "email": "azad@email.com",
-      "password": "abc"
-    },
-    {
-      "id": "24cf",
-      "name": "west",
-      "email": "west@email.com",
+      "id": "522a",
+      "name": "azhar",
+      "email": "azhar@email.com",
       "password": "abc"
     }
   ],
   "cart": [
     {
-      "id": "674d",
+      "id": "1047",
+      "name": "IPhone15 Pro",
+      "price": 200,
+      "color": "Green",
+      "category": "Mobile",
+      "description": "iPhone 15 Pro Max Price in Pakistan 499,000 The Apple iPhone 15 Pro Max is set to upset the cell phone industry with its pivotal highlights and cutting-edge innovation. As the leading model of Apple’s most recent iPhone series, the 15 Pro Max is intended to convey unrivaled execution, predominant camera capacities, and a staggering showcase. Here is a thorough glance at what makes the iPhone 15 Pro Max a distinct advantage in cell phones",
+      "image": "https://pricehub.pk/wp-content/uploads/2024/07/Infinix-Note-12-Price-in-Pakistan-fotor-20240716154148-400x600.png",
+      "quantity": 1,
+      "userId": "d35e",
+      "productId": "5c44"
+    },
+    {
+      "id": "049a",
+      "name": "Samsung",
+      "price": "200",
+      "color": "Voilet",
+      "category": "Mobile",
+      "description": "this is small intro of mobile",
+      "image": "https://pricehub.pk/wp-content/uploads/2024/07/iPhone-8-Price-in-Pakistan-fotor-2024071522475-450x338.png",
+      "quantity": 1,
+      "userId": "d35e",
+      "productId": "55a5"
+    },
+    {
+      "id": "d682",
+      "name": "Nokia 105 Classic",
+      "price": 800,
+      "color": "Black",
+      "category": "Mobile",
+      "description": "General Features Release Date 2024-03-27 SIM Support Dual Sim Phone Operating System S30+",
+      "image": "https://images.priceoye.pk/nokia-105-classic-pakistan-priceoye-w97ga-500x500.webp",
+      "quantity": 1,
+      "userId": "d35e",
+      "productId": "1020"
+    },
+    {
+      "id": "67df",
+      "name": "laptop 15inch",
+      "price": 300,
+      "color": "defrth",
+      "category": "laptop",
+      "description": "Laptop Asus E510M Intel Celeron N4020 Processor, 4GB Ram, 128GB eMMC, Intel UHD Graphics,15.6-inch HD Display, Windows 11 Home - Peacock Blue ",
+      "image": "https://goldentech.com.sa/media/catalog/product/cache/8276e34a2b4790aea4e7d6152991d045/l/a/laptop_asus_e510_intel_celeron_n4020_processor_peacock_blue_0_2_1.jpg",
+      "quantity": 1,
+      "userId": "d35e",
+      "productId": "1389"
+    },
+    {
+      "id": "5416",
+      "name": "IPhone 13 Pro",
+      "price": 200,
+      "color": "pink",
+      "category": "mibile",
+      "description": "Iphone 13pro is new seatured phone made by Apple",
+      "image": "https://www.apple.com/newsroom/images/product/iphone/standard/Apple_iphone13_hero_09142021_inline.jpg.large.jpg",
+      "quantity": 1,
+      "userId": "d35e",
+      "productId": "f23b"
+    },
+    {
+      "id": "ca70",
+      "name": "IPhone 13 Pro",
+      "price": 200,
+      "color": "pink",
+      "category": "mibile",
+      "description": "Iphone 13pro is new seatured phone made by Apple",
+      "image": "https://www.apple.com/newsroom/images/product/iphone/standard/Apple_iphone13_hero_09142021_inline.jpg.large.jpg",
+      "quantity": 1,
+      "userId": "522a",
+      "productId": "f23b"
+    },
+    {
+      "id": "01fa",
+      "name": "Hp Laptop bool",
+      "price": 300,
+      "color": "silver",
+      "category": "ChromeBook",
+      "description": "ddjalkdjaskldalksjdlkasjdlkadjksicc ddkldjksdaks dsadjaskd",
+      "image": "https://www.czone.com.pk/images/thumbnails-large/copy-37-czone.com.pk-1540-16199-070624103922.jpg",
+      "quantity": 1,
+      "userId": "522a",
+      "productId": "3f26"
+    },
+    {
+      "id": "4fe8",
       "name": "IPhone15 Pro",
       "price": 235678,
       "color": "Green",
@@ -117,9 +195,42 @@
       "description": "iPhone 15 Pro Max Price in Pakistan 499,000 The Apple iPhone 15 Pro Max is set to upset the cell phone industry with its pivotal highlights and cutting-edge innovation. As the leading model of Apple’s most recent iPhone series, the 15 Pro Max is intended to convey unrivaled execution, predominant camera capacities, and a staggering showcase. Here is a thorough glance at what makes the iPhone 15 Pro Max a distinct advantage in cell phones",
       "image": "https://pricehub.pk/wp-content/uploads/2024/07/Infinix-Note-12-Price-in-Pakistan-fotor-20240716154148-400x600.png",
       "quantity": 1,
-      "userId": "3215",
+      "userId": "522a",
       "productId": "5c44"
     }
   ],
-  "orders": []
+  "orders": [
+    {
+      "id": "f85f",
+      "email": "azhar@email.com",
+      "address": "swkg32 fjrf21",
+      "contact": 234556,
+      "totalPrice": 900,
+      "userId": "522a"
+    },
+    {
+      "id": "8097",
+      "email": "azhar@email.com",
+      "address": "ksksmc54 jddkd32",
+      "contact": 1234,
+      "totalPrice": 236578,
+      "userId": "522a"
+    },
+    {
+      "id": 0,
+      "email": "atta@email.com",
+      "address": "sjwjwjw",
+      "contact": 2112,
+      "totalPrice": 114667,
+      "userId": "ae3a"
+    },
+    {
+      "id": 0,
+      "email": "",
+      "address": "",
+      "contact": "",
+      "totalPrice": 80100,
+      "userId": "ae3a"
+    }
+  ]
 }

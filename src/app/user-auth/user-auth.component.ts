@@ -10,8 +10,8 @@ import { ProductService } from '../services/product.service';
 })
 export class UserAuthComponent implements OnInit {
   showLogin: boolean = true;
-  authError:string='';
-  constructor(private user: UserService, private product:ProductService) { }
+  authError: string = '';
+  constructor(private user: UserService, private product: ProductService) { }
 
   ngOnInit(): void {
     this.user.userAuthReload();
@@ -22,13 +22,13 @@ export class UserAuthComponent implements OnInit {
   }
   login(data: Login) {
     this.user.userLogin(data)
-    this.user.inValidUserAuth.subscribe((result)=>{
-      if(result){
-        this.authError="Enter Correct Details"
-    }else{
-      this.localCartToRemoteCart()
-    }
-  })
+    this.user.inValidUserAuth.subscribe((result) => {
+      if (result) {
+        this.authError = "Enter Correct Details"
+      } else {
+        this.localCartToRemoteCart()
+      }
+    })
   }
 
   openSignUp() {
@@ -38,32 +38,30 @@ export class UserAuthComponent implements OnInit {
   openLogin() {
     this.showLogin = true;
   }
-  localCartToRemoteCart(){
-    let user=localStorage.getItem('user');
-let data=localStorage.getItem('localCart');
-let userId=user && JSON.parse(user).id;
-if(data){
-let cartDataList:product[]=JSON.parse(data);
-cartDataList.forEach((product:product,index)=>{
-  let cartData:cart={
-    ...product,
-    productId:product.id,
-    userId
-  };
-  delete cartData.id;
-  setTimeout(()=>{
-  this.product.addToCart(cartData).subscribe((result)=>{
-    if(result){
+  localCartToRemoteCart() {
+    let data = localStorage.getItem('localCart');
+    let user = localStorage.getItem('user');
+    let userId = user && JSON.parse(user).id;
+    if (data) {
+      let cartDataList: product[] = JSON.parse(data);
+      cartDataList.forEach((product: product, index) => {
+        let cartData: cart = {
+          ...product,
+          productId: product.id,
+          userId
+        };
+        delete cartData.id;
+        setTimeout(() => {
+          this.product.addToCart(cartData).subscribe((result) => {
+          })
+        }, 500);
+        if (cartDataList.length === index + 1) {
+          localStorage.removeItem('localCart');
+        }
+      })
     }
-  })
-},500);
-  if(cartDataList.length===index+1){
-    localStorage.removeItem('localCart');
-  }
-})
-}
-setTimeout(() => {
-  this.product.getCartList(userId);
-}, 2000);
+    setTimeout(() => {
+      this.product.getCartList(userId);
+    }, 2000);
   }
 }

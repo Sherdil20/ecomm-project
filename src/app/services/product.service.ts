@@ -6,8 +6,10 @@ import { cart, order, product } from '../data-type';
   providedIn: 'root'
 })
 export class ProductService {
+  // AddToCart(cartData: cart) {
+  //   throw new Error('Method not implemented.');
+  // }
   cartData = new EventEmitter<product[] | []>();
-
   constructor(private http: HttpClient) { }
   addProduct(data: product) {
     return this.http.post('http://localhost:3000/products', data);
@@ -30,7 +32,7 @@ export class ProductService {
   trendyProducts() {
     return this.http.get<product[]>('http://localhost:3000/products?_limit=8');
   }
-  searchProduct(query: any) {
+  searchProduct(query: string) {
     return this.http.get<product[]>(`http://localhost:3000/products?q=${query}`);
   }
   localAddToCart(data: product) {
@@ -41,20 +43,18 @@ export class ProductService {
       this.cartData.emit([data]);
     } else {
       cartData = JSON.parse(localCart);
-      cartData.push(data)
+      cartData.push(data);
       localStorage.setItem('localCart', JSON.stringify(cartData));
       this.cartData.emit(cartData);
     }
   }
-  removeItemFromCart(productId: any) {
+  removeItemFromCart(productId: string) {
     let cartData = localStorage.getItem('localCart');
     if (cartData) {
       let items: product[] = JSON.parse(cartData);
       items = items.filter((item: product) => productId !== item.id);
-      localStorage.setItem('localCart', JSON.stringify(items)); {
-
+      localStorage.setItem('localCart', JSON.stringify(items));
         this.cartData.emit(items);
-      }
     }
   }
   addToCart(cartData: cart) {
@@ -66,16 +66,15 @@ export class ProductService {
         if (result && result.body) {
           this.cartData.emit(result.body);
         }
-
-      })
+      });
   }
-  removeFromCart(cartId: any|undefined) {
+  removeFromCart(cartId: string) {
     return this.http.delete('http://localhost:3000/cart/'+cartId);
   }
   currentCart() {
     let userStore = localStorage.getItem('user');
     let userData = userStore && JSON.parse(userStore);
-    return this.http.get('http://localhost:3000/cart?userId='+userData.id);
+    return this.http.get<cart[]>('http://localhost:3000/cart?userId='+userData.id);
   }
   orderNow(data:order){
     return this.http.post('http://localhost:3000/orders',data)
@@ -85,12 +84,12 @@ export class ProductService {
     let userData = userStore && JSON.parse(userStore);
     return this.http.get<order[]>('http://localhost:3000/orders?userId='+userData.id);
   }
-  deleteCartItems(cartId:any){
-    return this.http.delete('http://localhost:3000/cart/'+cartId,{observe:'response'}).subscribe((result)=>{
-        this.cartData.emit([])
+  deleteCartItems(cartId:number){
+    return this.http.delete('http://localhost:3000/cart/'+cartId).subscribe((result)=>{
+        this.cartData.emit([]);
     })
   }
-  cancelOrder(orderId:any){
+  cancelOrder(orderId:number){
 return this.http.delete('http://localhost:3000/orders/'+orderId);
   }
 }

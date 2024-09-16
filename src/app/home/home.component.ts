@@ -20,7 +20,4 @@ this.popularProducts=data;
     this.trendyProducts=data;
   })
 }
-
-
-
 }
