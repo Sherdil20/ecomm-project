@@ -1,14 +1,13 @@
 import { HttpClient } from '@angular/common/http';
 import { EventEmitter, Injectable } from '@angular/core';
 import { cart, order, product } from '../data-type';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductService {
-  // AddToCart(cartData: cart) {
-  //   throw new Error('Method not implemented.');
-  // }
+  
   cartData = new EventEmitter<product[] | []>();
   constructor(private http: HttpClient) { }
   addProduct(data: product) {
@@ -92,4 +91,8 @@ export class ProductService {
   cancelOrder(orderId:number){
 return this.http.delete('http://localhost:3000/orders/'+orderId);
   }
+  buyNow(data:order){
+    return this.http.post('http://localhost:3000/orders',data)
+  }
+  
 }
