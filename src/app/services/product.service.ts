@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ProductService {
-  
+    
   cartData = new EventEmitter<product[] | []>();
   constructor(private http: HttpClient) { }
   addProduct(data: product) {
@@ -90,6 +90,9 @@ export class ProductService {
   }
   cancelOrder(orderId:number){
 return this.http.delete('http://localhost:3000/orders/'+orderId);
+  }
+  updateCart(cartData: cart): Observable<any> {
+    return this.http.put('http://localhost:3000/cart', cartData);
   }
   buyNow(data:order){
     return this.http.post('http://localhost:3000/orders',data)

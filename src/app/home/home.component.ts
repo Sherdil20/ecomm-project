@@ -31,7 +31,6 @@ export class HomeComponent implements OnInit {
         if (!localStorage.getItem('user')) {
           // If user is not logged in, add to local cart
           this.productService.localAddToCart(productData);
-          console.log('Product added to local cart');
         } else {
           // If user is logged in, add to server cart
           const user = localStorage.getItem('user');
@@ -47,7 +46,6 @@ export class HomeComponent implements OnInit {
   
             this.productService.addToCart(cartData).subscribe((result) => {
               if (result) {
-                console.log('Product added to server cart');
                 this.productService.getCartList(userId); // Update cart list
               }
             });

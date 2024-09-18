@@ -1,6 +1,8 @@
 .nav {
     display: flex;
     justify-content: space-between;
+    text-decoration: none !important;
+    cursor: pointer;
 }
 .nav h1 {
     color: blueviolet;
@@ -12,10 +14,8 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
-    text-decoration: none;
 }
 .nav li{
-    text-decoration: none;
     padding-left: 15px;
     padding-top: 15px;
 }
