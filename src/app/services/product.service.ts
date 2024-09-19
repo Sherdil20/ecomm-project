@@ -57,6 +57,7 @@ export class ProductService {
     }
   }
   addToCart(cartData: cart) {
+
     return this.http.post('http://localhost:3000/cart',cartData);
   }
   getCartList(userId: string) {
@@ -91,8 +92,8 @@ export class ProductService {
   cancelOrder(orderId:number){
 return this.http.delete('http://localhost:3000/orders/'+orderId);
   }
-  updateCart(cartData: cart): Observable<any> {
-    return this.http.put('http://localhost:3000/cart', cartData);
+  updateCart(cartData: cart,productId:string,userId:string): Observable<any> {
+    return this.http.patch(`http://localhost:3000/cart?productId=${productId}&&userId=${userId}` ,cartData);
   }
   buyNow(data:order){
     return this.http.post('http://localhost:3000/orders',data)

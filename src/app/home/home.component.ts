@@ -26,7 +26,8 @@ export class HomeComponent implements OnInit {
   AddToCart(productId: string): void {
     this.productService.getProduct(productId).subscribe((productData: product) => {
       if (productData) {
-        productData.quantity = 1; // Default quantity; adjust if needed
+        if(productData.quantity == undefined) productData.quantity=0
+        productData.quantity += 1; // Default quantity; adjust if needed
   
         if (!localStorage.getItem('user')) {
           // If user is not logged in, add to local cart
@@ -44,7 +45,7 @@ export class HomeComponent implements OnInit {
             };
             delete cartData.id;
   
-            this.productService.addToCart(cartData).subscribe((result) => {
+            this.productService.updateCart(cartData,productId,userId).subscribe((result) => {
               if (result) {
                 this.productService.getCartList(userId); // Update cart list
               }
